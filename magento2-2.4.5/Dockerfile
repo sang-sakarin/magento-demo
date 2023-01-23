@@ -3,13 +3,13 @@ FROM webdevops/php-apache-dev:8.1-alpine
 # FROM formatdgmbh/webdevops-php-apache-dev:8.1
 
 
-RUN wget -O "/usr/local/bin/go-replace" "https://github.com/webdevops/goreplace/releases/download/1.1.2/gr-arm64-linux" \
-    && chmod +x "/usr/local/bin/go-replace" \
-    && "/usr/local/bin/go-replace" --version
+# RUN wget -O "/usr/local/bin/go-replace" "https://github.com/webdevops/goreplace/releases/download/1.1.2/gr-arm64-linux" \
+#     && chmod +x "/usr/local/bin/go-replace" \
+#     && "/usr/local/bin/go-replace" --version
 
 # RUN echo "Mutex posixsem" >> /etc/apache2/apache2.conf
-RUN echo "Mutex posixsem" >> /etc/apache2/apache2.conf
-RUN echo "Mutex posixsem" >> /etc/apache2/httpd.conf
+# RUN echo "Mutex posixsem" >> /etc/apache2/apache2.conf
+# RUN echo "Mutex posixsem" >> /etc/apache2/httpd.conf
 
 # memory
 ENV PHP_MEMORY_LIMIT=4096M
