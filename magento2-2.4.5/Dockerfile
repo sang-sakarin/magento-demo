@@ -1,6 +1,6 @@
-# FROM webdevops/php-apache-dev:8.1-alpine
+FROM webdevops/php-apache-dev:8.1-alpine
 # for m1
-FROM formatdgmbh/webdevops-php-apache-dev:8.1
+# FROM formatdgmbh/webdevops-php-apache-dev:8.1
 
 
 RUN wget -O "/usr/local/bin/go-replace" "https://github.com/webdevops/goreplace/releases/download/1.1.2/gr-arm64-linux" \
